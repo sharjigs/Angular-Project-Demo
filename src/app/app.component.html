@@ -1,0 +1,107 @@
+<!-- <h1>{{title}}</h1>
+<nav>
+
+  <a [routerLink]="['/admin/adminlists']">Heroes</a>
+</nav> -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a [routerLink]="['/']" class="w3-bar-item w3-button w3-wide">Sharma Group</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a [routerLink]="['/about/']" class="w3-bar-item w3-button">ABOUT</a>
+      <a [routerLink]="['/team/']" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a [routerLink]="['/work/']" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a [routerLink]="['/contact/contacts']" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sharma Group</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a  [routerLink]="['/']">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admins <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/admin/adminlists']">Admin List</a></li>
+            <li><a [routerLink]="['/admin/']">Admin Dashboard</a></li>
+            <li><a [routerLink]="['/admin/adminprofiles']">Admin Profile</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/contact/contactlist']">Contacts List</a></li>
+            <li> <a [routerLink]="['/contact/contacts']">Contacts</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Customers <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/customer/customerlist']">Customer List</a></li>
+            <li><a [routerLink]="['/customer/custdash']">Customer Dashboard</a></li>
+            <li><a [routerLink]="['/customer/customerprofiles']">Customer Profile</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/employees/employeelist']">Employees List</a></li>
+            <li><a [routerLink]="['/employees/employess']">Employees</a></li>
+            <li><a [routerLink]="['/employees/superusers']">Super Employees</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+
+<!-- <ul>
+  <!-- <li><a [routerLink]="['/admin/adminlists']">Home</a></li>
+    <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a [routerLink]="['/admin/']" class="dropbtn">Admins</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/admin/adminlists']">Admin List</a>
+      <a [routerLink]="['/admin/']">Admin Dashboard</a>
+      <a [routerLink]="['/admin/adminprofiles']">Admin Profile</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contacts</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/contact/contactlist']">Contacts List</a>
+      <a [routerLink]="['/contact/contacts']">Contacts</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Customers</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/customer/customerlist']">Customer List</a>
+      <a [routerLink]="['/customer/custdash']">Customer Dashboard</a>
+      <a [routerLink]="['/customer/customerprofiles']">Customer Profile</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Employees</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/employees/employeelist']">Employees List</a>
+      <a [routerLink]="['/employees/employess']">Employees</a>
+      <a [routerLink]="['/employees/superusers']">Super Employees</a>
+    </div>
+  </li>
+</ul> -->
+
+
+<router-outlet></router-outlet>
+<ngx-spinner type="square-jelly-box" size="medium"><p style="color: yellowgreen;" > Sharma Group</p></ngx-spinner>
